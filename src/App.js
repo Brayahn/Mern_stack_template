@@ -1,10 +1,9 @@
 import Micasa from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import ContentList from './pages/ContentList';
-
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import notfound from './pages/notfound';
 
 function App() { 
   return ( 
@@ -13,8 +12,8 @@ function App() {
     <div className="max-w-screen-md mx-auto pt-20"> 
       <Route exact path="/" component={Micasa} /> 
       <Route exact path="/About/:name" component={About} /> 
-      <Route exact path="/Contact" component={Contact} /> 
-      <Route exact path="/Content" component={ContentList} /> 
+      <Route exact path="/Sections" component={ContentList} /> 
+      <Route component={notfound} /> 
     </div>
     </Router>
   );
