@@ -1,4 +1,4 @@
-const sections = [
+const Sections = [
 
     {
     name: "random-1",
@@ -32,4 +32,4 @@ const sections = [
 
 ];
 
-export default sections;
+export default Sections;

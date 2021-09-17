@@ -1,9 +1,9 @@
 import React from 'react';
-import sections from './About_Content';
+import Sections from './About_Content';
 
 const About = ({match}) => {
     const name = match.params.name;
-    const about = sections.find((about)=> about.name === name);
+    const about = Sections.find((about)=> about.name === name);
     if (!about) return <h1> Information does not excist </h1>;
     return (
         <div mb-20>
@@ -11,11 +11,18 @@ const About = ({match}) => {
                 {about.title}
                 </h1>
                 {about.content.map((paragraph, index) => (
-                    <p className="mx-auto leading-relaxed text-base mb-4" key={index}> {paragraph} </p> 
+                    <p className="mx-auto leading-relaxed text-base mb-4" key={index}> 
+                    {paragraph} 
+                    </p> 
                 ))
-                }   
+                }
+
+           <h1 className="sm:text-2x text-xl font-bold mt-4 mb-4 text-gray-900"> 
+           
+           Other Sections</h1>     
+                
         </div>
-    );
+        );
 };
 
 export default About;
