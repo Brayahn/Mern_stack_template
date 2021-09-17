@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
+        <>
              {Sections.map((about, index) => (
 
 <div key={index} className="p-4 md:w-1/2">
@@ -27,7 +27,7 @@ const About = () => {
     </div>
 </div>
 ))}
-        </div>
+        </>
     );
 };
 
