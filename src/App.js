@@ -11,7 +11,7 @@ function App() {
     <NavBar/>
     <div className="max-w-screen-md mx-auto pt-20"> 
       <Route exact path="/" component={Micasa} />
-      <Route exact path="/About" component={About} />
+      <Route exact path="/About/:name" component={About} />
       <Route exact path="/Contact" component={Contact} />
     </div>
     </Router>
