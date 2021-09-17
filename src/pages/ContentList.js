@@ -1,6 +1,6 @@
 import React from 'react';
 import Sections from './About_Content';
-import { Link } from 'react-router-dom';
+import About_ from '../components/About_';
 
 
 const ContentList = () => {
@@ -10,7 +10,7 @@ const ContentList = () => {
             Sections
         </h1><div className='container py-4 mx-auto'>
             <div className='flex flex-wrap -m-4'>
-               
+               <About_ info={Sections}/>
             </div>
             </div>
             </>     

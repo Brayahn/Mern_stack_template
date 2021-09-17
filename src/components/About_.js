@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const About = () => {
+const About_ = (info) => {
     return (
         <>
              {Sections.map((about, index) => (
@@ -31,4 +32,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default About_;
