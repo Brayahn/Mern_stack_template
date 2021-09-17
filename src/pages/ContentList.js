@@ -17,7 +17,7 @@ const ContentList = () => {
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                     <Link to={`/about/${About.name}`}> </Link>
 
-                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={article.thumbnail} alt="blog" />
+                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={article.thumbnail} alt="Image" />
                 </div>
             </div>
             )}
